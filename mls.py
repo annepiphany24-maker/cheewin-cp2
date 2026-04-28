@@ -3,8 +3,7 @@ def initialize_library():
     try:
         file = open("MLS.txt", "x")
         file.close()
-
-        print("Library file created successfully.")
+        print("File created successfully.")
 
     except FileExistsError:
         print("Library file already exists.")
@@ -18,7 +17,7 @@ def initialize_library():
 
     file.close()
 
-    print("Initial books added successfully.")
+    print("Initial books added successfully!")
 
 
 initialize_library()
