@@ -1,23 +1,26 @@
 def initialize_library():
-
     try:
-        file = open("MLS.txt", "x")
-        file.close()
-        print("File created successfully.")
+        f = open("Mini Library.txt", "x")
+        f.close()
+        print("Library file created successfully!")
+
 
     except FileExistsError:
-        print("Library file already exists.")
+        print("Library file already exists!")
 
-    file = open("MLS.txt", "w")
 
-    file.write("To Kill a Mockingbird\n")
-    file.write("Behind the Blue Sky\n")
-    file.write("Between the Rainbows\n")
-    file.write("Learn Computer Programming\n")
+def write_initial_data():
+    f = open("Mini Library.txt", "w")
 
-    file.close()
 
-    print("Initial books added successfully!")
+    f.write("Welcome to the Mini Library System!\n")
+    f.write("Book No. 001 | Title: Learn Computer Programing\n")
+    f.write("Book No. 002 | Title: Behind the Blue Sky\n")
 
+    f.close()
+
+
+    print("Initial data written successfully!\n")
 
 initialize_library()
+write_initial_data()
