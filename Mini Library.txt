@@ -1,3 +1,0 @@
-Welcome to the Mini Library System!
-Book No. 001 | Title: Learn Computer Programing
-Book No. 002 | Title: Behind the Blue Sky
